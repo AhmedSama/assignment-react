@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* utility classes */
+.flex{
+  display: flex;
+}
+.align-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.gap{
+  gap: 0.5rem;
+}
+.gap-1{
+  gap: 1rem;
+}
+.gap-2{
+  gap: 2rem;
+}
+.m{
+  margin: 0.5rem;
+}
+.m-1{
+  margin: 1rem;
+}
+.m-2{
+  margin: 2rem;
+}
+.mb{
+  margin-bottom: 0.5rem;
+}
+.mb-1{
+  margin-bottom: 1rem;
+}
+.mb-2{
+  margin-bottom: 2rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* main classes */
+
+
+.container{
+  max-width: 715px;
+  margin: 100px auto;
+}
+
+.title{
+  font-size: 19px;
+  font-weight: 500;
+}
+.tag{
+  background-color: #B03337;
+  color: white;
+  font-size: 10px;
+  padding: 3px 6px;
+}
+
+.img-container{
+  width: 100%;
+  overflow: hidden;
+  /* center the image inside it */
+  display: grid;
+  place-items: center;
+  object-fit: cover;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.rounded-group{
+  background-color: rgb(243, 243, 243);
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  overflow: hidden; 
+}
+.rounded-btn{
+  padding: 5px 10px;
+  font-size: 15px;
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  height: 100%;
+  color: rgb(56, 56, 56);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.2s all ease;
+}
+
+.rounded-btn:hover,.rounded-btn.active{
+  background-color: rgb(225, 225, 225);
+}
+
+
+.article{
+  font-size: 15px;
+  font-weight: 400;
 }
